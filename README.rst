@@ -1,6 +1,11 @@
 ElectricSheepPi
 ===============
 
+
+.. image:: http://unofficialpi.org/media/electric_sheep_pi_image.jpg
+.. :scale: 100 %
+.. :alt: Image of Electric Sheep
+
 A `Raspberry Pi <http://www.raspberrypi.org/>`_ distribution to to run `Electric Sheep : Crowdsourced Evolving Art <https://electricsheep.org/>`_ out of the box and the scripts necessary to load it at boot.
 This repository contains the source script to generate the distribution out of an existing `Raspbian <http://www.raspbian.org/>`_ distro image.
 
