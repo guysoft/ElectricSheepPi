@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#This is an example module of how to set things up
+
+source /common.sh
+install_cleanup_trap
+
+unpack /filesystem/home/pi /home/pi pi
+unpack /filesystem/home/root /root root
+unpack /filesystem/boot /boot
+
+sudo apt-get update
+sudo apt-get install -y subversion autoconf libtool libgtk2.0-dev libgl1-mesa-dev libavcodec-dev libavformat-dev libswscale-dev liblua5.1-0-dev libcurl4-openssl-dev libxml2-dev libjpeg8-dev libgtop2-dev libboost-dev libboost-filesystem-dev libboost-thread-dev libtinyxml-dev freeglut3-dev glee-dev libwxgtk3.0-dev git checkinstall
+
+pushd /home/pi
+    git clone https://github.com/scottdraves/flam3.git
+    pushd flam3
+        ./configure
+        make
+        sudo checkinstall -y
+    popd
+    
+    git clone https://github.com/scottdraves/electricsheep.git
+    pushd electricsheep/client_generic
+        ./autogen.sh
+        ./configure
+        make
+	sudo checkinstall --fstrans=no -y
+    popd
+pushd
+
+# Unpack root at the end, so files are modified before
+unpack /filesystem/root /
