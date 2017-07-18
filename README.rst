@@ -6,14 +6,9 @@ ElectricSheepPi
 .. :scale: 100 %
 .. :alt: Image of Electric Sheep
 
-A `Raspberry Pi <http://www.raspberrypi.org/>`_ distribution to to run `Electric Sheep : Crowdsourced Evolving Art <https://electricsheep.org/>`_ out of the box and the scripts necessary to load it at boot.
-
-Official mirror is `here <http://unofficialpi.org/Distros/ElectricSheepPi>`_
-
+A `Raspberry Pi <http://www.raspberrypi.org/>`_ distribution to to run `Electric Sheep : Crowdsourced Evolving Art <https://electricsheep.org/>`_ out of the box and the scripts necessary to load it at boot. This repository contains the source script to generate the distribution out of an existing `Raspbian <http://www.raspbian.org/>`_ distro image. `You can download a built image here <http://unofficialpi.org/Distros/ElectricSheepPi>`_
 
 ElectricSheepPi is based on `CustomPiOS <https://github.com/guysoft/CustomPiOS>`_
-
-This repository contains the source script to generate the distribution out of an existing `Raspbian <http://www.raspbian.org/>`_ distro image.
 
 Where to get it?
 ----------------
