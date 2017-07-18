@@ -2,7 +2,7 @@ ElectricSheepPi
 ===============
 
 
-.. image:: http://unofficialpi.org/media/electric_sheep_pi_image.jpg
+.. image:: http://unofficialpi.org/media/electric_sheep_pi_image2.jpg
 .. :scale: 100 %
 .. :alt: Image of Electric Sheep
 
