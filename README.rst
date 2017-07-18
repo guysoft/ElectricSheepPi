@@ -4,7 +4,7 @@ ElectricSheepPi
 A `Raspberry Pi <http://www.raspberrypi.org/>`_ distribution to to run `Electric Sheep : Crowdsourced Evolving Art <https://electricsheep.org/>`_ out of the box and the scripts necessary to load it at boot.
 This repository contains the source script to generate the distribution out of an existing `Raspbian <http://www.raspbian.org/>`_ distro image.
 
-ElectricSheepPi is based on CustonPiOS `OctoPi <https://github.com/guysoft/OctoPi>`_
+ElectricSheepPi is based on `CustonPiOS <https://github.com/guysoft/CustonPiOS>`_
 
 Where to get it?
 ----------------
