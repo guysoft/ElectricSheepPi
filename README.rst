@@ -62,7 +62,7 @@ You can build it by issuing the following commands::
     git clone https://github.com/guysoft/CustomPiOS.git
     git clone https://github.com/guysoft/ElectricSheepPi.git
     cd ElectricSheepPi/src/image
-    curl -J -O -L  http://downloads.raspberrypi.org/raspbian_latest
+    wget -c --trust-server-names 'https://downloads.raspberrypi.org/raspbian_lite_latest'
     cd ..
     ../../CustomPiOS/src/update-custompios-paths
     sudo modprobe loop
