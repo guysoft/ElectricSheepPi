@@ -34,7 +34,7 @@ Requirements
 Features
 --------
 
-* Runs Electrtic Sheep out of the box
+* Runs Electric Sheep out of the box
 
 Developing
 ----------
