@@ -1,5 +1,7 @@
 export DIST_NAME=ElectricSheep
 export DIST_VERSION=0.3.0
-export MODULES="base(network, gui,electricsheep)"
+export MODULES="base(network, gui,electricsheep, usage-statistics)"
 export GUI_STARTUP_SCRIPT=electricsheep
 export BASE_IMAGE_ENLARGEROOT=1000
+
+export USAGE_STATISTICS_URL=https://electricsheep-tracking.gnethomelinux.com
