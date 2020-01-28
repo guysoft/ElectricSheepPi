@@ -27,7 +27,7 @@ How to use it?
 
 Requirements
 ------------
-* Raspberrypi 2 and newser or device running Armbian, Older Rasperry Pis are not currently supported.  See `Raspberry Pi <https://github.com/guysoft/FullPageOS/issues/12>`_ and `Raspberry Pi <https://github.com/guysoft/FullPageOS/issues/43>`_.
+* Raspberrypi 1/3/4B and zero
 * 2A power supply
 
 

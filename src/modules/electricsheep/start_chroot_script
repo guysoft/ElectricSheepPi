@@ -17,7 +17,7 @@ pushd /home/pi
     git clone https://github.com/scottdraves/flam3.git
     pushd flam3
         autoreconf -f -i
-        ./configure --build=armv7l-unknown-linux-gnueabihf
+        ./configure --build=arm-unknown-linux-gnueabihf
         make
         sudo checkinstall -y
     popd
@@ -27,7 +27,7 @@ pushd /home/pi
         wget https://raw.githubusercontent.com/stefantalpalaru/gentoo-overlay/master/x11-misc/electricsheep/files/electricsheep-glext-prototypes.patch
         patch -p1 < electricsheep-glext-prototypes.patch
         ./autogen.sh
-        ./configure --build=armv7l-unknown-linux-gnueabihf
+        ./configure --build=arm-unknown-linux-gnueabihf
         make
 	sudo checkinstall --fstrans=no -y
     popd
