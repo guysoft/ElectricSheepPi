@@ -29,6 +29,7 @@ Requirements
 ------------
 * Raspberrypi 1/3/4B and zero
 * 2A power supply
+* Internet connection
 
 
 Features
