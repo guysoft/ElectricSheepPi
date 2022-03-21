@@ -23,7 +23,9 @@ Also many thanks to people contributing code.
 Where to get it?
 ----------------
 
-Official mirror is `here <http://unofficialpi.org/Distros/ElectricSheepPi>`_
+You can use the `pi-imager <https://github.com/guysoft/pi-imager/releases>`_ commuity raspberrypi imager here, unofficial section.
+
+Or download directly form the official mirror `here <http://unofficialpi.org/Distros/ElectricSheepPi>`_
 
 
 How to use it?
