@@ -4,4 +4,8 @@ export MODULES="base(network, gui,electricsheep, usage-statistics)"
 export GUI_STARTUP_SCRIPT=electricsheep
 export BASE_IMAGE_ENLARGEROOT=2000
 
+export RPI_IMAGER_NAME="${DIST_NAME} version ${DIST_VERSION}"
+export RPI_IMAGER_DESCRIPTION="A Raspberry Pi distribution to to run Electric Sheep, crowdsourced evolving art"
+export RPI_IMAGER_ICON="https://raw.githubusercontent.com/guysoft/ElectricSheepPi/devel/media/rpi-imager-electricsheep.png"
+
 export USAGE_STATISTICS_URL=https://electricsheep-tracking.gnethomelinux.com
