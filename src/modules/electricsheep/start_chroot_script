@@ -11,7 +11,7 @@ source /common.sh
 install_cleanup_trap
 
 sudo apt-get update
-sudo apt-get install -y subversion autoconf libtool libgtk2.0-dev libgl1-mesa-dev libavcodec-dev libavformat-dev libswscale-dev liblua5.1-0-dev libcurl4-openssl-dev libxml2-dev libjpeg9-dev libgtop2-dev libboost-dev libboost-filesystem-dev libboost-thread-dev libtinyxml-dev freeglut3-dev glee-dev libwxgtk3.0-gtk3-dev git checkinstall
+sudo apt-get install -y subversion autoconf libtool libgtk2.0-dev libgl1-mesa-dev libavcodec-dev libavformat-dev libswscale-dev liblua5.1-0-dev libcurl4-openssl-dev libxml2-dev libjpeg-dev libgtop2-dev libboost-dev libboost-filesystem-dev libboost-thread-dev libtinyxml-dev freeglut3-dev glee-dev libwxgtk3.0-gtk3-dev git checkinstall
 
 pushd /home/pi
     git clone https://github.com/scottdraves/flam3.git
@@ -20,13 +20,15 @@ pushd /home/pi
         ./configure --build=arm-unknown-linux-gnueabihf
         export LDFLAGS="-Wl,--copy-dt-needed-entries"
         make
+        # Fix missing folder
+        mkdir /usr/local/share/man/man1
         sudo checkinstall -y
     popd
     
     git clone https://github.com/scottdraves/electricsheep.git
     pushd electricsheep/client_generic
-        wget https://raw.githubusercontent.com/stefantalpalaru/gentoo-overlay/master/x11-misc/electricsheep/files/electricsheep-glext-prototypes.patch
-        patch -p1 < electricsheep-glext-prototypes.patch
+        # wget https://raw.githubusercontent.com/stefantalpalaru/gentoo-overlay/master/x11-misc/electricsheep/files/electricsheep-glext-prototypes.patch
+        # patch -p1 < electricsheep-glext-prototypes.patch
         ./autogen.sh
         ./configure --build=arm-unknown-linux-gnueabihf
         make
